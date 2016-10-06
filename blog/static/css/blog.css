@@ -12,6 +12,7 @@ p.customfont {
 /*Custom font added above!*/
 
 
+
 h1 a {
     color: #FCA205;
     font-family: 'Hind';
@@ -24,6 +25,16 @@ p {
 body {
     padding-left: 15px;
     font-family: 'Hind', sans-serif;
+    /*background added below*/
+    background-image: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/seigaiha.png");
+    background-repeat: repeat;
+    /*background added above*/
+
+
+
+
+
+
 }
 
 .page-header {
