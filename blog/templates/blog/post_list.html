@@ -1,4 +1,9 @@
-{% extends 'blog/base.html' %}
+{% extends 'blog/home.html' %}
+
+<div style="background:transparent !important" class="jumbotron text-center">
+    <h1>Sarah's Blog</h1>
+    <p>Follow along as I spend 3 months trekking through CodeRGV's (boot)</p>
+</div>
 
 {% block content %}
     {% for post in posts %}
@@ -7,7 +12,7 @@
                 {{ post.published_date }}
             </div>
             <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
+            <!-- <p>{{ post.text|linebreaksbr }}</p> -->
         </div>
     {% endfor %}
 {% endblock content %}
