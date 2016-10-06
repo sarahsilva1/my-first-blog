@@ -1,21 +1,11 @@
-/*<style type="text/css">
-@font-face {
-    font-family: "My Custom Font";
-    src: url(http://www.example.org/mycustomfont.ttf) format("truetype");
-}
-p.customfont {
-    font-family: "My Custom Font", Verdana, Tahoma;
-}
-</style>
-<p class="customfont">Hello world!</p>*/
-
-/*Custom font added above!*/
-
-
 
 h1 a {
     color: #FCA205;
     font-family: 'Hind';
+}
+
+h1 {
+  text-shadow: -2px 4px 1px rgba(0, 0, 0, 0.15);
 }
 
 p {
@@ -45,7 +35,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Hind', cursive;
 }
 
 .date {
@@ -75,62 +65,69 @@ h1, h2, h3, h4 {
     color: #000000;
 }
 
+
+
+
 /*blinking cursor below*/
-/*.blinking-cursor {
-  font-weight: 100;
-  font-size: 30px;
-  color: #2E3D48;
-  -webkit-animation: 1s blink step-end infinite;
-  -moz-animation: 1s blink step-end infinite;
-  -ms-animation: 1s blink step-end infinite;
-  -o-animation: 1s blink step-end infinite;
-  animation: 1s blink step-end infinite;
-}
+@import "lesshat";
 
-@keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: black;
+.blink
+{
+  animation: blink .7s steps(2, start) infinite;
+  -webkit-animation: blink .7s steps(2, start) infinite;
+}
+@keyframes blink
+{
+  to
+  {
+      visibility: hidden;
   }
 }
-
-@-moz-keyframes blink {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: black;
+@-webkit-keyframes blink
+{
+  to
+  {
+      visibility: hidden;
   }
 }
 
-@-webkit-keyframes "blink" {
-  from, to {
-    color: transparent;
+// A bit of layout to make it more "beautiful" / less "ugly"
+
+article
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fc745f;
+  text-align: center;
+
+  h1
+  {
+    font-size: 4em;
+    line-height: .2;
+    color: #fff;
+    .opacity(.8);
+    font-weight: normal;
   }
-  50% {
-    color: black;
+
+  h2
+  {
+    font-size: 1.5em;
+    font-weight: normal;
+    .opacity(.5);
   }
 }
 
-@-ms-keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: black;
-  }
-}
 
-@-o-keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: black;
-  }
-}*/
+#cursor
+{
+  position: relative;
+  top: -6;
+  left: 3;
+  font-size: 35px;
+  color: #fff;
+  text-shadow: -2px 4px 1px rgba(0, 0, 0, 0.15);
+}
 /*blinking cursor above*/
 
 /*background added below*/
