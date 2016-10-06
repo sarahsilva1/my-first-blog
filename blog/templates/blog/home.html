@@ -1,26 +1,27 @@
 {% load staticfiles %}
 <html>
     <head>
-
-
         <title>Sarah's Blog</title>
-
-
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+<!-- new font inserted below -->
+<style>
+@import 'https://fonts.googleapis.com/css?family=Hind';
+</style>
+<!-- new font imported above -->
     </head>
+
+
     <body>
         <div class="page-header">
           {% if user.is_authenticated %}
             <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
           {% endif %}
 
+
 <!--editing below this line-->
-
-
-
 <div style="background:transparent !important" class="jumbotron text-center">
     <h1>Sarah's Blog</h1>
     <p>Follow along as I spend 3 months trekking through CodeRGV's (boot)</p>
