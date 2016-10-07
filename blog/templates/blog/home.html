@@ -1,3 +1,5 @@
+
+
 {% load staticfiles %}
 <html>
     <head>
@@ -15,7 +17,7 @@
 
     </head>
 
-
+ <div class="container">
     <body>
         <div class="page-header">
           {% if user.is_authenticated %}
@@ -23,19 +25,13 @@
           {% endif %}
 
 
-<!--editing below this line-->
-<div style="background:transparent !important" class="jumbotron text-center">
-    <h1>Sarah's Blog<span id="cursor" class="blink">|</span></h1>
+
       <!-- cursor below -->
-
-
-
+      <div style="background:transparent !important" class="jumbotron text-center">
+          <h1>Sarah Silva<span id="cursor" class="blink">|</span></h1>
     <!-- cursor above -->
     <p>Follow along as I spend 3 months trekking through CodeRGV's (boot)</p>
 </div>
-
-<!--editing above this line-->
-
 
 
         </div>
@@ -50,4 +46,5 @@
 
 
     </body>
+  </div>
 </html>
