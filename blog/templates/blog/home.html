@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <!-- new font inserted below -->
 <style>
 @import 'https://fonts.googleapis.com/css?family=Hind';
@@ -25,13 +26,14 @@
           {% endif %}
 
 
-
       <!-- cursor below -->
-      <div style="background:transparent !important" class="jumbotron text-center">
+      <div style="background:transparent !important" class="jumbotron vertical center" >
+        <div style="background:transparent !important" class="row" >
+
           <h1>Sarah Silva<span id="cursor" class="blink">|</span></h1>
     <!-- cursor above -->
     <p>Follow along as I spend 3 months trekking through CodeRGV's (boot)</p>
-</div>
+</div></div>
 
 
         </div>
@@ -41,10 +43,55 @@
                     {% block content %}
                     {% endblock %}
                 </div>
+              </div>
             </div>
         </div>
 
-
+        <!-- footer deets are here -->
+        <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3>Sarah<span> Silva</span></h3>
+        <p class="footer-links">
+          <a href="#">Home</a>
+          ·
+          <a href="#">Blog</a>
+          ·
+          <a href="#">Pricing</a>
+          ·
+          <a href="#">About</a>
+          ·
+          <a href="#">Faq</a>
+          ·
+          <a href="#">Contact</a>
+        </p>
+        <p class="footer-company-name">Sarah Silva &copy; 2016</p>
+      </div>
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>801 N Bryan Rd</span> Mission, TX</p>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+1 956 648 0238</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:sarahsilva@my.codergv.org">sarahsilva@my.codergv.org</a></p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About Me</span>
+I know enough to know that I don't know much, but I also know that I'll know more tomorrow.        </p>
+        <div class="footer-icons">
+          <a href="https://www.facebook.com/silvasarah"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/sarahsilva1"><i class="fa fa-linkedin"></i></a>
+          <a href="https://github.com/sarahsilva1"><i class="fa fa-github"></i></a>
+        </div>
+      </div>
+      </footer>
+      <!-- footer deets are above -->
     </body>
   </div>
 </html>
